@@ -1,0 +1,36 @@
+{
+  "name": "uxp-esbuild-react-typescript-template",
+  "version": "1.0.0",
+  "description": "UXP Plugin Template With 'esbuild', 'react', 'typescript' and 'tailwind'",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node ./esbuild.watch.js",
+    "build": "node ./esbuild.build.js",
+    "lint:fix": "eslint --fix ./src/**/*.tsx"
+  },
+  "author": "Beomjun Gil",
+  "license": "MIT",
+  "devDependencies": {
+    "@deanc/esbuild-plugin-postcss": "^1.0.2",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "autoprefixer": "^10.4.4",
+    "chokidar": "^3.5.3",
+    "esbuild": "^0.14.31",
+    "esbuild-plugin-postcss2": "^0.1.2",
+    "eslint": "^8.12.0",
+    "eslint-plugin-react": "^7.29.4",
+    "fs-extra": "^10.0.1",
+    "postcss": "^8.4.12",
+    "typescript": "^4.6.3",
+    "uxp-types": "^0.1.2"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-uxp-spectrum": "^0.1.10",
+    "tailwindcss": "^3.0.23"
+  }
+}

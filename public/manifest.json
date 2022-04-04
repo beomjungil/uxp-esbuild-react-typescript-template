@@ -1,0 +1,83 @@
+{
+  "id": "kr.beomjun.uxp-template",
+  "name": "Example UXP Plugin",
+  "version": "1.0.0",
+  "main": "index.html",
+  "host": [
+    {
+      "app": "PS",
+      "minVersion": "22.0.0",
+      "data" : {
+        "apiVersion": 2,
+        "loadEvent": "use"
+      }
+    }
+  ],
+  "manifestVersion": 4,
+  "entrypoints": [
+    {
+      "type": "command",
+      "id": "about",
+      "description": "Get infomation about the plugin.",
+      "label": {
+        "default": "About"
+      }
+    },
+    {
+      "type": "command",
+      "id": "openFile",
+      "label": {
+        "default": "Open File (Nothing will happen.)"
+      }
+    },
+    {
+      "type": "panel",
+      "id": "getLayers",
+      "label": {
+          "default": "Get Layers"
+      },
+      "minimumSize": {"width": 230, "height": 200},
+      "maximumSize": {"width": 2000, "height": 2000},
+      "preferredDockedSize": {"width": 230, "height": 300},
+      "preferredFloatingSize": {"width": 230, "height": 300},
+      "icons": [
+          {
+              "width": 23, "height": 23, "path": "icons/panel-dark.png", "scale": [ 1, 2 ],
+              "theme": [ "darkest", "dark", "medium" ], "species": [ "chrome" ]
+          }, {
+              "width": 23, "height": 23, "path": "icons/panel-dark.png", "scale": [ 1, 2 ],
+              "theme": [ "lightest", "light" ], "species": [ "chrome" ]
+          }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "width": 23,
+      "height": 23,
+      "path": "icons/dark.png",
+      "scale": [
+        1,
+        2
+      ],
+      "theme": [
+        "darkest",
+        "dark",
+        "medium"
+      ]
+    },
+    {
+      "width": 23,
+      "height": 23,
+      "path": "icons/light.png",
+      "scale": [
+        1,
+        2
+      ],
+      "theme": [
+        "lightest",
+        "light"
+      ]
+    }
+  ]
+}
